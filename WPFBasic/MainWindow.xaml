@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPFBasic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBasic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    <Border Padding="10">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>      
+            <Button x:Name="Button1" Click="Button1_Click"  Margin="0 0 10 0" Grid.Column="0" Content="Test1"></Button>
+            <Button Grid.Column="1" Content="Test2"></Button>
+            <Button Margin="10 0 0 0" Grid.Column="2" Content="Test3"></Button>
+        </Grid>
+
+            <TextBlock Text="Name"/>
+            <TextBox x:Name="Name" Text="type your name" />
+        
+        </StackPanel>
+    </Border>
+</Window>
